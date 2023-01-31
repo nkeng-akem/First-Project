@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+    
+    a:hover {
+      background-color: rgb(193, 180, 180);
+      
+    }
+    
+    .previous {
+      background-color: rgb(100, 95, 95);
+      color: black;
+    }
+    
+    
+    
+    .round {
+      border-radius: 50%;
+    }
+    </style>
+
+    </head>
+    <body>
+    
+    
+    
+    <a class="hey"href="newmygrid.html" class="previous">&laquo; Zurück</a>
+    
+    
+    <a class="hey"href="newmygrid.html" class="previous round">&#8249;</a>
+    
+      
+    </body>
+    </html>
+    
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+ 
+  background-color: #ddd;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 0px;
+  margin:10px 50px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fotos{
+    margin:10px 50px;
+}
+</style>
+
+
+<h2 style="text-align:center">Gallery</h2>
+
+
+<div class="row">
+  <div class="column">
+    
+    <img src="Images/IMG-20221201-WA0022.jpg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/IMG-20221201-WA0018.jpg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/IMG-20221201-WA0028.jpg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/IMG-8783.jpg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/IMG-8794.jpg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/1E676FAD-44FA-447C-A29C-E1BDBC0DA18C.jpeg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/B72319E5-009D-4EA0-B33E-A2CBCEA9F0A7.jpeg" alt="HTML"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    
+    <img src="Images/7A24A82F-7A78-422B-A715-CA5F7D511136.jpeg" alt="meat pie"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="column">
+    
+    <img src="Images/4-Nigerian-Meat-Pie-Recipe.jpg" alt="meat pie"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/20221125_114454.jpg" alt="meat pie"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/8332B3F0-1F9E-45A0-9E5B-772914FE1AB2.jpeg" alt="meat pie"  width="300"height="400"style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/85E4639C-D9E7-44D3-8185-68BAB847C3D9.jpeg"alt="meat pie"  width="300"height="400" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="Images/IMG-20221201-WA0022.jpg" alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="Images/IMG-20221201-WA0018.jpg" alt="meat pie"  width="300"height="800"style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="Images/IMG-20221201-WA0028.jpg" alt="meat pie"  width="300"height="800"style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="Images/IMG-8783.jpg"alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="Images/IMG-8794.jpg"alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="Images/1E676FAD-44FA-447C-A29C-E1BDBC0DA18C.jpeg"alt="HTML"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="Images/B72319E5-009D-4EA0-B33E-A2CBCEA9F0A7.jpeg"alt="HTML"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8/ 12</div>
+      <img src="Images/7A24A82F-7A78-422B-A715-CA5F7D511136.jpeg"alt="HTML"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="Images/4-Nigerian-Meat-Pie-Recipe.jpg"alt="HTML"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="Images/20221125_114454.jpg"alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="Images/8332B3F0-1F9E-45A0-9E5B-772914FE1AB2.jpeg"alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12/ 12</div>
+      <img src="Images/85E4639C-D9E7-44D3-8185-68BAB847C3D9.jpeg"alt="meat pie"  width="300"height="800" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Images/IMG-20221201-WA0022.jpg" alt="make balls"  width="300"height="400" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/IMG-20221201-WA0018.jpg" alt="flatten"  width="300"height="400"style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/IMG-20221201-WA0028.jpg" alt="fill in"  width="300"height="400" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/IMG-8783.jpg" alt="bake"  width="300"height="400" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/IMG-8794.jpg" alt="meat pie"  width="300"height="400" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/1E676FAD-44FA-447C-A29C-E1BDBC0DA18C.jpeg" alt="meat pie"  width="300"height="400" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/B72319E5-009D-4EA0-B33E-A2CBCEA9F0A7.jpeg" alt="meat pie"  width="300"height="400" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/7A24A82F-7A78-422B-A715-CA5F7D511136.jpeg" alt="meat pie "  width="300"height="400" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/4-Nigerian-Meat-Pie-Recipe.jpg" alt="meat pie mit Rindhackfleisch"  width="300"height="400" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/20221125_114454.jpg" alt="meat pie mit Schweinhackfleich"  width="300"height="400" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/8332B3F0-1F9E-45A0-9E5B-772914FE1AB2.jpeg" alt="meat pie"  width="300"height="400" style="width:100%" onclick="currentSlide(11)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/85E4639C-D9E7-44D3-8185-68BAB847C3D9.jpeg" alt="meat pie mit gemischte Hackfleisch"  width="300"height="400" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

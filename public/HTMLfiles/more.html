@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href ="test2.css" rel ="stylesheet"/>
+</head>
+<body>
+  <header>
+    
+    <h1><div> Beliebte Meat pie
+        
+    </h1> </div>
+  </header> 
+
+<style>
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+  color: black;
+              }
+              
+              .previous {
+                background-color: linear-gradient(353deg, rgba(148,210,189,1) 40%, rgba(61,147,151,1) 100%);
+                color: black;
+              }
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  </style>
+
+ 
+  
+  
+  
+  <a class="hey"href="newmygrid.html" class="previous">&laquo; Zurück</a>
+  
+  
+  <a class="hey"href="newmygrid.html" class="previous round">&#8249;</a>
+  
+    
+  
+  
+  
+</body>
+</html>
+<div class="row">
+    <figure>      
+      <img src="Images/20221125_114454.jpg" alt="HTML"  width="300"height="500" />
+      
+      <figcaption>
+        <h3>meat pie mit schweine Hackfleisch</h3>
+          <p> Entdecke die kamerunischen Kultur, wo wir Sie mit nahrhaften Lebensmitteln füttern.</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src=" Images/meat-pie-filling-768x1152.jpg" alt="HTML"  width="300"height="500"/> 
+  
+      <figcaption>
+        
+        <h3>meat pie mit gemischte Hackfleisch</h3>
+        <p> Genießen Sie echte hausgemachte Fleischpastete ohne Zusatzstoffe</p>
+        
+         
+      </figcaption>
+    </figure>
+    <div>
+    <h3>Zutaten für meat pie mit schweine Hackfleisch</h3>
+    <ul>
+      <li>6 Tassen normales Mehl</li>
+  
+      <li> 500 g Butter</li>
+      
+      <li> 4 Esslöffel Zucker</li>
+      
+      <li>1 Esslöffel Backpulver</li>
+      
+      <li>1 Esslöffel Salz</li>
+      
+      <li> 5 mittelgroße Eier</li>
+      
+      <li>1 Tasse Milch</li>
+      
+ 
+      <li>750 g  Schweine Hackfleisch</li>
+      
+      <li> 1 große Kartoffel (gewürfelt)</li>
+      
+      <li> 2 Möhren (geschält und gewürfelt)</li>
+      <li> Pflanzliches Öl</li>
+  
+      <li>1 Zwiebel (gewürfelt)</li>
+      <li>Salz</li>
+  <li>2 Esslöffel Mehl</li>
+  </ul>
+  </div>
+    <div>
+<h3>Zutaten für meat pie mit gemischte Hackfleisch</h3>
+    <ul>
+    <li>6 Tassen normales Mehl</li>
+    <li> 500 g Butter</li>
+    <li> 4 Esslöffel Zucker</li>
+    <li>1 Esslöffel Backpulver</li>
+    <li>1 Esslöffel Salz</li>
+    <li> 5 mittelgroße Eier</li>
+    <li>1 Tasse Milch</li>
+    <li>750 g gemischte Hackfleisch</li>
+    <li> 1 große Kartoffel (gewürfelt)</li>
+    <li> 2 Möhren (geschält und gewürfelt)</li>
+    <li> Pflanzliches Öl</li>
+    <li>1 Zwiebel (gewürfelt)</li>
+    <li>Salz</li>
+    <li>2 Esslöffel Mehl</li>
+</ul>
+ </div>
+ </div>
+ 
+  <style>
+    figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+img {
+  /* image must stretch across all rows */
+  grid-row:1/3;
+  grid-column:  1/2;
+}
+figcaption {
+  grid-column: 1/2;
+  /* caption overlaps the last row with the image */
+  grid-row: 2/3;
+  opacity: 0.7;
+}
+
+
+/* Basic figure and caption styling */
+/* Turn off margin, set by browser */
+figure {
+  margin: 0;
+  padding: 0;
+}
+/* caption styling  */
+figcaption {
+  background-color: #021820;
+  color: white;
+  padding: 2rem;
+}
+/* reduces the top margin on the h2, bottom on the p, and leaves a 0.5rem gap between the two */
+figcaption * {
+  margin: 0.5rem;
+}
+/* hack to make images flexible */
+img {
+  width: 100%;
+}
+
+
+@media (min-width: 600px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
+
+  
+}
+
+
+/* default styling, no changes needed here, even with responsive design */
+
+/* set the layout to border box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* set font family and background gradient */
+body {
+  padding: 0;
+  border: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+  </style>
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: grey;
+  padding: 40px 10px;
+}
+
+.header a {
+  
+  text-align:center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  text-align:center;
+  color: aliceblue;
+}
+.header a.logo:hover{
+  background-color: grey;
+  color: aliceblue;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  
+}
+
+.header a.active {
+  background-color: grey;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a  class="logo">NENE'S CUISINE</a>
+  <div class="header-right">
+    <a class="active" href="newmygrid.html">Home</a>
+    <a href="myGallery.html">Gallery</a>
+    <a href="newmeatpie.html">About</a>
+    <a href="test2.html">More</a>
+    <a href="test.html">Bestellen</a>
+
+  </div>
+</div>
+
+
+
+</head>
+
+<body>
+
+
+<img src="Images/20221125_114454.jpg"alt="HTML" width="1520" height ="640"style="width:100%;">
+
+<h2>Menu</h2>
+<h4>Bestellung ab 3 Stuck. 2€ pro Stück .</h4>
+<dl>
+  <div class="money">
+   <dt>meat pie</dt>
+    <dd>mit Schwein Hackfleisch</dd>
+</div>
+ <div class="money">
+    <dt>meat pie</dt>
+    
+    <dd> mit gemischte Hackfleisch</dd>
+</div>
+    
+<div class="money">
+    <dt>meat pie</dt>
+    <dd>mit Rind Hackfleisch</dd>
+</div>
+<div class="money">
+    <dt>meat pie</dt>
+    <dd>mit kartoffel und gemischte Hackfleich</dd>
+ </div>
+<div class="money">
+    <dt>veggie pie</dt>
+    <dd>mit gemüse</dd>
+</div>
+<div class="money">
+    <dt>meat pie</dt>
+    <dd>mit kartofeln und gemüse</dd>
+</div>
+</dl>
+</div>
+
+
+
+</body>
+<style>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.money{
+    max-width: 400px;
+    border-bottom: 1px solid #999;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 1rem;
+   padding: 1rem;
+}
+
+* {
+    padding: 1 rem;
+    
+}
+dt{
+font-weight: bold;
+grid-column-start: 1;
+padding:0;
+/*border:1px dotted blue;*/
+}
+dd{
+margin: 0;
+grid-column-start: 2;
+/*border:1px solid red;*/
+}
+dd:first-of-type{
+    grid-row-start: 1;
+}
+
+h4{
+  padding: 20px;
+    color:black;
+}
+h2{
+  
+  padding:20px;
+  color:rgb(79, 13, 13)
+    
+    
+}
+h3{
+  
+  padding: 20px;
+    color:chocolate
+}
+
+</style>
+</body>
+</html>

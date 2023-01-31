@@ -1,0 +1,15 @@
+{
+  "name": "nodejs.example",
+  "version": "1.0.0",
+  "description": "Node.js example application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nkeng Akem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
